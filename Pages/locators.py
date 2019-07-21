@@ -7,3 +7,7 @@ class MainPageLocators(object):
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
     LOGIN_URL = 'http://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
     MAIN_LINK = 'http://selenium1py.pythonanywhere.com/'
+
+
+class ProductPageLocators(object):
+    SUCCESS_MESSAGE = (By.XPATH, '//*[@id="messages"]/div[1]')
