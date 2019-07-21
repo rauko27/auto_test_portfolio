@@ -11,3 +11,12 @@ class MainPageLocators(object):
 
 class ProductPageLocators(object):
     SUCCESS_MESSAGE = (By.XPATH, '//*[@id="messages"]/div[1]')
+
+class BasePageLocators(object):
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    CART_LINK = (By.XPATH, '//*[@id="default"]/header/div[1]/div/div[2]/span/a')
+
+class CartPageLocators(object):
+    IMPTY_BASKET = (By.ID, 'content_inner')
+    PRODUCT_IN_BASKET = (By.XPATH, '//*[@id="basket_formset"]/div/div')
