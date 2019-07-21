@@ -1,6 +1,6 @@
-from .main_page import MainPage
-from .login_page import LoginPage
-from .locators import MainPageLocators
+from .Pages.main_page import MainPage
+from .Pages.login_page import LoginPage
+from .Pages.locators import MainPageLocators
 
 def test_guest_should_see_login_link(browser):
     link = MainPageLocators.MAIN_LINK
