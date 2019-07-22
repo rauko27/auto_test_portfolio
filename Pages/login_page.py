@@ -26,3 +26,6 @@ class LoginPage(BasePage):
         password_for_reg = self.browser.find_element_by_xpath('//*[@id="id_registration-password1"]').send_keys(password)
         confirm_password_for_reg = self.browser.find_element_by_xpath('//*[@id="id_registration-password2"]').send_keys(password)
         btn = self.browser.find_element_by_xpath('//*[@id="register_form"]/button').click()
+
+
+#111
