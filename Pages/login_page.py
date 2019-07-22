@@ -11,8 +11,7 @@ class LoginPage(BasePage):
     def should_be_login_url(self):
         # реализуйте проверку на корректный url адрес
         login_in_url = self.browser.current_url
-        print(login_in_url)
-        assert MainPageLocators.LOGIN_URL == login_in_url, "Url link is not True"
+        assert MainPageLocators.LOGIN_URL in login_in_url, "Url link is not True"
 
     def should_be_login_form(self):
         # реализуйте проверку, что есть форма логина

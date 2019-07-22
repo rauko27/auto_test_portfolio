@@ -77,7 +77,7 @@ class TestUserAddToCartFromProductPage(object):
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
         email = str(time.time()) + "@fakemail.org"
-        link = MainPageLocators.LOGIN_URL
+        link = MainPageLocators.MAIN_LINK + MainPageLocators.LOGIN_URL
         page = LoginPage(browser, link)
         page.open()
         page.register_new_user(email=email, password='Qwert9876')
